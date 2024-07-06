@@ -3,12 +3,13 @@ package com.comcast.crm.contacttest;
 import org.testng.annotations.Test;
 
 import com.comcast.crm.baseutility.BaseClass;
+import com.comcast.crm.baseutility.BaseClass1;
 import com.comcast.crm.objectrepositoryutility.ContactInfoPage;
 import com.comcast.crm.objectrepositoryutility.ContactPage;
 import com.comcast.crm.objectrepositoryutility.CreatingNewContactPage;
 import com.comcast.crm.objectrepositoryutility.HomePage;
 
-public class CreateContact1Test extends BaseClass{
+public class CreateContact1Test extends BaseClass1{
 
 	@Test(groups = "smokeTest")
 	public void createContactTest()throws Throwable{
