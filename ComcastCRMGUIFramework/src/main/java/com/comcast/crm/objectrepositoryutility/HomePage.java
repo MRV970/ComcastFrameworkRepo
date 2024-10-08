@@ -14,7 +14,29 @@ public class HomePage {
 	}
 	@FindBy(linkText="books")
 	private WebElement booklink;
+	@FindBy(partialLinkText="novel")
+	private WebElement novel;
 	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+
+	public WebElement getNovel() {
+		return novel;
+	}
+
+
+	public WebElement getAdminLink() {
+		return adminLink;
+	}
+
+
+	public WebElement getSignOutLink() {
+		return signOutLink;
+	}
+
+
 	public WebElement getBooklink() {
 		return booklink;
 	}
