@@ -2,6 +2,8 @@ package com.comcast.crm.generic.databaseutility;
 
 import java.sql.Connection;
 
+
+
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -34,7 +36,6 @@ public class DatabaseUtility {
    public void closeDbConnection() throws SQLException {
 	   try {
 		   
-	   
 	   con.close();
 	   }catch(Exception e) {
 		   

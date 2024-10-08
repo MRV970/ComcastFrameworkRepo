@@ -12,8 +12,12 @@ public class HomePage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
+	@FindBy(linkText="books")
+	private WebElement booklink;
 	
-	
+	public WebElement getBooklink() {
+		return booklink;
+	}
 	@FindBy(linkText="Organizations")
 	private WebElement orgLink;
 	

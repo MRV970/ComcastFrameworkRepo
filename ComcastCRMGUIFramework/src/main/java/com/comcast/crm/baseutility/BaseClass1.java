@@ -42,18 +42,18 @@ public class BaseClass1 {
 		System.out.println("==connect to DB ,Report Config==");
 		dLib.getDbConnection();
 		
-		//spark report configure
-				ExtentSparkReporter	 spark=new ExtentSparkReporter("./AdvanceReport/report.html");
-				spark.config().setDocumentTitle("CRM Test Suite Results");
-				spark.config().setReportName("CRM Report");
-				spark.config().setTheme(Theme.DARK);
-				
-				//add Env information &create test
-				 report =new ExtentReports();
-				report.attachReporter(spark);
-				//create testcase
-				report.setSystemInfo("OS", "Windows-10");
-			report.setSystemInfo("BROWSER", "CHROME-100");
+//		//spark report configure
+//				ExtentSparkReporter	 spark=new ExtentSparkReporter("./AdvanceReport/report.html");
+//				spark.config().setDocumentTitle("CRM Test Suite Results");
+//				spark.config().setReportName("CRM Report");
+//				spark.config().setTheme(Theme.DARK);
+//				
+//				//add Env information &create test
+//				 report =new ExtentReports();
+//				report.attachReporter(spark);
+//				//create testcase
+//				report.setSystemInfo("OS", "Windows-10");
+//			report.setSystemInfo("BROWSER", "CHROME-100");
 				
 	}
 	//@Parameters("Browser")
@@ -61,6 +61,7 @@ public class BaseClass1 {
 	public void configBC() throws IOException {
 		System.out.println("==Launch the Browser==");
       String Browser=	fLib.getDataFromPropertiesFile("browser");
+     // String Browser=System.getProperty("browser");
      // WebDriver driver =null;
 		//String Browser=browser;
 		if(Browser.equalsIgnoreCase("chrome")) {
@@ -87,7 +88,9 @@ public class BaseClass1 {
 		String Url=fLib.getDataFromPropertiesFile("url");
 		String Username=fLib.getDataFromPropertiesFile("username");
 		String Password=fLib.getDataFromPropertiesFile("password");
-		
+//		String Url=System.getProperty("url");
+//		String Username=System.getProperty("username");
+//		String Password=System.getProperty("password");
 	lp.loginToapp(Url,  Username,  Password);
 		
 	}

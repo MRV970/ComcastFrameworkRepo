@@ -5,14 +5,15 @@
 		<run>
 			<include name="smokeTest"></include>
 			<include name="RegressionTest"></include>
-			
-			
+
 		</run>
-		
+
 	</groups>
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="com.comcast.crm.orgtest.CreateOrganization1Test"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.comcast.crm.orgtest.CreateOrganization1Test" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
