@@ -14,6 +14,11 @@ public class HomePage {
 	}
 	@FindBy(linkText="books")
 	private WebElement booklink;
+	@FindBy(id = "212")
+	private WebElement newidAdd;
+	public WebElement getNewidAdd() {
+		return newidAdd;
+	}
 	@FindBy(partialLinkText="novel")
 	private WebElement novel;
 	
