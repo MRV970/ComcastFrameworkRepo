@@ -20,16 +20,22 @@ public class HomePage {
 		return newidAdd;
 	}
 	@FindBy(partialLinkText="novel")
-	private WebElement novel;
+	private WebElement novelslink;
 	
 	public WebDriver getDriver() {
 		return driver;
 	}
 
 
-	public WebElement getNovel() {
-		return novel;
+	
+
+
+	public WebElement getNovelslink() {
+		return novelslink;
 	}
+
+
+
 
 
 	public WebElement getAdminLink() {
