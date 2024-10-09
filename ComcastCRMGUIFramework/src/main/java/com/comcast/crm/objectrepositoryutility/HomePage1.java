@@ -13,7 +13,8 @@ public class HomePage1 {
 	}
 	@FindBy(linkText="Organizations")
 	private WebElement orgLink;
-	
+	@FindBy(linkText="logout")
+	private WebElement logout;
 	@FindBy(linkText="button")
 	private WebElement button;
 	
