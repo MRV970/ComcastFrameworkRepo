@@ -13,6 +13,9 @@ public class HomePage1 {
 	}
 	@FindBy(linkText="Organizations")
 	private WebElement orgLink;
+	
+	@FindBy(linkbutton="button")
+	Pivate WebElement button;
 	public WebElement getOrgLink() {
 		return orgLink;
 	}
