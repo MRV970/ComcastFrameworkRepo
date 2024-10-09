@@ -16,5 +16,10 @@ public class HomePage1 {
 	public WebElement getOrgLink() {
 		return orgLink;
 	}
+	@FindBy(linkText="books")
+	private WebElement books;
+	public WebElement getBooks() {
+		return books;
+	}
 
 }
