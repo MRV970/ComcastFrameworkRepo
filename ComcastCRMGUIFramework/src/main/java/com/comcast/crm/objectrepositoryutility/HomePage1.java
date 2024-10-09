@@ -32,8 +32,6 @@ public class HomePage1 {
 	@FindBy(linkText="books")
 	private WebElement books;
 	
-	@FindBy(linkText="logout")
-	private WebElement logout;
 	public WebElement getBooks() {
 		return books;
 	}
