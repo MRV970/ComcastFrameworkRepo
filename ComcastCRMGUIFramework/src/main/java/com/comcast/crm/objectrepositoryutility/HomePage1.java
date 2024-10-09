@@ -14,10 +14,23 @@ public class HomePage1 {
 	@FindBy(linkText="Organizations")
 	private WebElement orgLink;
 	
+<<<<<<< HEAD
 	
+=======
+	@FindBy(linkText="button")
+	private WebElement button;
+>>>>>>> branch 'master' of https://github.com/MRV970/ComcastFrameworkRepo.git
 	
 	public WebElement getOrgLink() {
 		return orgLink;
+	}
+	@FindBy(linkText="books")
+	private WebElement books;
+	
+	@FindBy(linkText="logout")
+	private WebElement logout;
+	public WebElement getBooks() {
+		return books;
 	}
 
 }

@@ -26,19 +26,11 @@ public class HomePage {
 		return driver;
 	}
 
-
-	
-
-
-	public WebElement getNovelslink() {
+   public WebElement getNovelslink() {
 		return novelslink;
 	}
 
-
-
-
-
-	public WebElement getAdminLink() {
+   public WebElement getAdminLink() {
 		return adminLink;
 	}
 
@@ -47,8 +39,7 @@ public class HomePage {
 		return signOutLink;
 	}
 
-
-	public WebElement getBooklink() {
+    public WebElement getBooklink() {
 		return booklink;
 	}
 	@FindBy(linkText="Organizations")
@@ -58,13 +49,11 @@ public class HomePage {
 	private WebElement productLink;
 	
 	
-	
 	public WebElement getOrgLink() {
 		return orgLink;
 	}
 
-
-	public WebElement getProductLink() {
+    public WebElement getProductLink() {
 		return productLink;
 	}
 
